@@ -45,6 +45,7 @@ class Solution:
 ****
 # delete element & sort
 
+Two index method
 ```
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
@@ -60,4 +61,15 @@ class Solution:
                 l += 1 # 左指针往右移动
             i -= 1 # 存放结果的指针需要往前平移一位
         return res
+```
+
+Sort funtion method
+
+```
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        for i in range(len(nums)):
+            nums[i]=nums[i]**2
+        nums.sort()
+        return nums
 ```
