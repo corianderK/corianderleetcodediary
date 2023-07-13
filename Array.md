@@ -2,9 +2,8 @@
 
 Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
 
-https://www.geeksforgeeks.org/binary-search/#
+[leetcode 704](https://www.geeksforgeeks.org/binary-search/#)
 
-for leetcode 704
 
 solution 1: [left,right)
 ```
