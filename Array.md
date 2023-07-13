@@ -43,6 +43,24 @@ class Solution:
 ```
 
 ****
+# delete element
+
+[leetcode 27](https://leetcode.cn/problems/remove-element/)
+
+fast slow index method
+```
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        fast,slow=0,0
+        l=len(nums)
+        while fast<l:
+            if nums[fast]!=val:
+                nums[slow]=nums[fast]
+                slow+=1
+            fast+=1
+        return slow
+```
+
 # delete element & sort
 
 [leetcode 977](https://leetcode.cn/problems/squares-of-a-sorted-array/)
