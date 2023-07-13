@@ -45,6 +45,8 @@ class Solution:
 ****
 # delete element & sort
 
+[leetcode 977](https://leetcode.cn/problems/squares-of-a-sorted-array/)
+
 Two index method
 ```
 class Solution:
