@@ -113,3 +113,38 @@ class Solution:
             right+=1
         return min_len if min_len!=float('inf') else 0
 ```
+
+
+[leetcode 59. sprial matrix ii](https://leetcode.cn/problems/spiral-matrix-ii/)
+<img width="264" alt="Screenshot 2023-07-14 at 14 15 19" src="https://github.com/corianderK/corianderleetcodediary/assets/65326195/5450d7a1-9c13-44d3-99a7-42716a2ea401">
+
+```
+class Solution:
+    def generateMatrix(self, n: int) -> List[List[int]]:
+        startx=0
+        starty=0
+        nums=[[0]*n for _ in range(n)]
+        loop=n//2
+        mid=n//2
+        count=1
+
+        for offset in range(1,loop+1):
+            for i in range(starty,n-offset):
+                nums[startx][i]=count
+                count+=1
+            for j in range(startx,n-offset):
+                nums[j][n-offset]=count
+                count+=1
+            for i in range(n-offset,starty,-1):
+                nums[n-offset][i]=count
+                count+=1
+            for j in range(n-offset,startx,-1):
+                nums[j][starty]=count
+                count+=1
+            startx+=1
+            starty+=1
+
+        if n%2 !=0:
+            nums[mid][mid]=count
+        return nums
+```
