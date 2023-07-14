@@ -95,6 +95,10 @@ class Solution:
 
 [leetcode 209. minimum size subarray sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
+how to build a matrix by python:
+
+<img width="304" alt="image" src="https://github.com/corianderK/corianderleetcodediary/assets/65326195/fe82e8c1-c7a4-4989-9ca3-f088c4cbc4c2">
+
 ```
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
@@ -116,6 +120,7 @@ class Solution:
 
 
 [leetcode 59. sprial matrix ii](https://leetcode.cn/problems/spiral-matrix-ii/)
+
 <img width="264" alt="Screenshot 2023-07-14 at 14 15 19" src="https://github.com/corianderK/corianderleetcodediary/assets/65326195/5450d7a1-9c13-44d3-99a7-42716a2ea401">
 
 ```
