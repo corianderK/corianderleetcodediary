@@ -1,4 +1,21 @@
+202. 快乐数
+
+https://leetcode.cn/problems/happy-number/
+
+```
+       seen = []
+       while n != 1:
+           n = sum(int(i) ** 2 for i in str(n))
+           if n in seen:
+               return False
+           seen.append(n)
+       return True
+```
+
+
+
 349. 两个数组的交集
+     
 https://leetcode.cn/problems/intersection-of-two-arrays/
 
 ```
