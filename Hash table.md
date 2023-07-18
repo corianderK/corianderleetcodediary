@@ -85,3 +85,27 @@ class Solution:
             #将value=7，再遍历，下一次查找是否有元素2
         return []
 ```
+
+第454题.四数相加II
+
+https://leetcode.cn/problems/4sum-ii/
+
+```
+class Solution:
+    def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
+        # 使用字典存储nums1和nums2中的元素及其和
+        hashmap=dict()
+        for n1 in nums1:
+            for n2 in nums2:
+                hashmap[n1+n2]=hashmap.get(n1+n2,0)+1
+
+        # 如果 -(n1+n2) 存在于nums3和nums4, 存入结果
+        count=0
+        for n3 in nums3:
+            for n4 in nums4:
+                key=-n3-n4
+                if key in hashmap:
+                    count += hashmap[key]
+                
+        return count
+```
